@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Admin</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="product-modal" class="modal">
+			<div class="modal-content">
+			  <span class="close">&times;</span>
+			  <h2 id="form-title">Add product</h2>
+			  <form id="product-form">
+				<label for="image-input">Image:</label>
+				<input type="text" id="image-input" required>
+				<label for="name-input">Name:</label>
+				<input type="text" id="name-input" required>
+				<label for="description-input">Details:</label>
+				<textarea id="description-input" required></textarea>
+				<label for="price-input">Price:</label>
+				<input type="number" id="price-input" required>
+				<label for="stock-input">Stock:</label>
+				<input type="number" id="stock-input" required>
+				<button type="submit">Add</button>
+			  </form>
+			</div>
+		  </div>
+
+		<div class="container">
+			<div class="navbar">
+				<div>
+					<a href="../../../index.html">Home</a>
+					<!-- <a href="../details/details.html">Details</a> -->
+					<a href="../cart/cart.html">Cart</a>
+					<a href="../admin/admin.html">Admin</a>
+				</div>
+			</div>
+			<div class="admin">
+				<p>Product management</p>
+
+				<button id="add-product-btn">Add new product</button>
+
+				<table class="admin-tab">
+					<thead>
+						<tr>
+							<th>Image</th>
+							<th>Name</th>
+							<th>Price</th>
+							<th>Stock</th>
+							<th>Delete</th>
+						</tr>
+					</thead>
+					<tbody id="product-table"></tbody>
+				</table>
+			</div>
+		</div>
+
+		
+		<script type="module" src="admin.js"></script>
+	</body>
+</html>
