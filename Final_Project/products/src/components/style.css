@@ -1,24 +1,82 @@
+body {
+	font-family: 'Roboto Flex', sans-serif;
+	
+}
+
 .card {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	border: 1px solid gray;
-	border-radius: 10px;
-	padding: 5px;
-	width: 150px;
-	background-color: lightcyan;
+	padding: 70px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
 .card img {
-	width: 100px;
+	width: 280px;
 }
 
-.card p {
-	font-size: 10px;
+.name-card {
+	font-size: 20px;
+	text-align: center;
+	color: #176B87;
 }
 
-.details {
-	width: 100%;
+.price-card {
+	font-size: 20px;
+	color: #176B87;
 }
+
+#details-btn {
+	width: 30%;
+	border-style: solid;
+	text-align: center;
+	border-radius: 12px;
+	text-decoration: none;
+	border-color: #176B87;
+	color: #176B87;;
+}
+
+#price-icon {
+	font-size: 26px;
+	margin-right: 7px;
+	color: #176B87	;
+}
+
+
+a, a:visited {
+    color: inherit;
+}
+
+
+.name-details {
+	font-size: 25px;
+	padding-bottom: 20px;
+	color: #176B87;
+}
+
+#img-details {
+	width: 350px;
+	padding-bottom: 5px;
+}
+
+.price-details {
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+.prod-details {
+	padding-bottom: 15px;
+	line-height: 16px;
+}
+
+.add-to-cart-btn {
+	width: 120px;
+	height: 32px;
+	border-radius: 10px;
+	border-style: none;
+	font-size: 15px;
+	background-color: #176B87;
+	color: white;
+}
+
+	
 

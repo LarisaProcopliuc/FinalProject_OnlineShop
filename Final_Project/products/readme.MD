@@ -1,7 +1,7 @@
 ### Install dependencies
 
 ```bash
-cd movies
+cd products
 ```
 
 ```bash

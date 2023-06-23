@@ -101,7 +101,7 @@ const populateAdminTable = async () => {
         <td class="image-cell"><img src="${product.image}" alt="Product Image"/> </td>
         <td class="name-cell"><a href="#product-form">${product.name}</a></td>
         <td class="price-cell">${product.price} </td>
-        <td class="stock-cell">${product.stoc} </td>
+        <td class="stock-cell">${product.stock} </td>
         <td> <button class="delete-button" data-id="${product.id}">X</button> </td>`;
   
       adminTableBody.appendChild(row);

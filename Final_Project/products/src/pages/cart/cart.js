@@ -51,7 +51,7 @@ const showProducts = async () => {
 	  `;
 	  tbody.appendChild(productRow);
 	});
-  
+	
 	table.appendChild(thead);
 	table.appendChild(tbody);
 	cartContainer.appendChild(table);
