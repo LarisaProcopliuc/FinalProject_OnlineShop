@@ -1,3 +1,5 @@
+import { getProductById } from "../api/getProductById";
+
 export const addProductToCart = (id) => {
 	const cart = localStorage.getItem('cart');
 	let cartArray = [];
@@ -52,3 +54,15 @@ export function removeProductFromCart(id, cartArray) {
 	}
   }
 
+  export const calculateTotal = async () => {
+	const cartArray = JSON.parse(localStorage.getItem('cart')) || [];
+	let total = 0;
+  
+	for (const product of cartArray) {
+	  const productInfo = await getProductById(product.id);
+	  total += productInfo.price * product.quantity;
+	}
+  
+	const totalElement = document.getElementById('total');
+	totalElement.textContent = `Total: $ ${total.toFixed(2)}`;
+  };

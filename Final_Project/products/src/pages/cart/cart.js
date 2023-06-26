@@ -6,10 +6,13 @@ import {
   removeProductFromCart,	
 } from '../../utils/cart';
 
+import { calculateTotal } from '../../utils/cart';
+
 const showProducts = async () => {
 	let cartArray = JSON.parse(localStorage.getItem('cart')) || [];
 	const sortedProductsById = cartArray.sort(
 	  (product1, product2) => product1.id - product2.id
+	  
 	);
   
 	const cartContainer = document.getElementById('cart');
@@ -60,7 +63,16 @@ const showProducts = async () => {
   	numarProduseValoare.textContent = cartArray.length;
   };
 
-window.addEventListener('load', showProducts);
+
+
+window.addEventListener('load', () => {
+	showProducts();
+	calculateTotal();
+  });
+
+window.addEventListener('click', async() => {
+	calculateTotal();
+})
 
 document.getElementById('cart').addEventListener('click', async (e) => {
 	const cartArray = JSON.parse(localStorage.getItem('cart'));
