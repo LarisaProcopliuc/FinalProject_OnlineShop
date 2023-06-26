@@ -39,7 +39,7 @@ const showProducts = async () => {
 			<img src="${productInfo.image}" width="30px" alt="Product Image" />
 		  </a>
 		</td>
-		<td>${productInfo.price}</td>
+		<td>$ ${productInfo.price}</td>
 		<td>
 		  <button class="decrement-quantity" data-product-id="${product.id}">-</button>
 		  ${product.quantity}
@@ -51,10 +51,13 @@ const showProducts = async () => {
 	  `;
 	  tbody.appendChild(productRow);
 	});
-	
+
 	table.appendChild(thead);
 	table.appendChild(tbody);
 	cartContainer.appendChild(table);
+
+	const numarProduseValoare = document.getElementById('numar-produse-valoare');
+  	numarProduseValoare.textContent = cartArray.length;
   };
 
 window.addEventListener('load', showProducts);
@@ -78,3 +81,5 @@ document.getElementById('cart').addEventListener('click', async (e) => {
 	await showProducts();
   });	
 
+
+  	

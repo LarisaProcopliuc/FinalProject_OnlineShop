@@ -17,3 +17,9 @@ export const deleteProduct = async (productId) => {
       console.log('Error deleting product', error);
     }
   };
+
+  export const resetForm = () => {
+    formTitle.textContent = 'Add new product';
+    addFormButton.textContent = 'Add';
+    productForm.removeAttribute('data-product-id');
+  };

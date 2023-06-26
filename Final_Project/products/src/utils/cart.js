@@ -1,5 +1,3 @@
-import { getProductById } from '../api/getProductById';
-
 export const addProductToCart = (id) => {
 	const cart = localStorage.getItem('cart');
 	let cartArray = [];
@@ -50,16 +48,3 @@ export function removeProductFromCart(id, cartArray) {
     }
 }
 
-// export function calculateSubtotal(cartArray) {
-// 	let subtotal = 0;
-// 	cartArray.forEach(async (product) => {
-// 	  const productInfo = await getProductById(product.id);
-// 	  subtotal += productInfo.price * product.quantity;
-// 	});
-// 	return subtotal;
-//   }
-  
-//   export function updateTotal(subtotal) {
-// 	const totalElement = document.getElementById('total');
-// 	totalElement.innerText = `Total:${subtotal.toFixed(2)}`;
-//   }

@@ -2,25 +2,28 @@
     background-color: #F24C3D;
     color: white;
     line-height: 25px;
-    padding-top: 12px;
+    padding-top: 20px;
     padding-bottom: 12px;
     text-align: center;
     width: 450px;
-    margin-left: 850px;
+    margin-left: 770px;
     height: 55px;
-    opacity: 65%;
+    opacity: 75%;
     border-radius: 10px;
     position: absolute;
-    margin-top: 50px;
+    margin-top: 250px;
     font-weight: bold;
+    z-index: 9999;
+    font-size: 18px;
 }
 
 .navbar {
    background-color: #64CCC5;
    height: 910px;
-   width: 150px;
+   width: 120px;
    position: absolute;
    border-radius: 10px;
+   opacity: 80%;
 }
 
 .elements-navigation {
@@ -64,8 +67,4 @@
     font-size: 18px;
 }
 
-.details {
-    position: absolute;
-    margin-left: 300px;
-    margin-top: 70px;
-}
+

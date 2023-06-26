@@ -1,14 +1,23 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 table {
-    width: 100%;
+    width: 99%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    border: 1px solid black;
   }
 
 th {
-    background-color: lightgray;
+    background-color: #DAFFFB;
+    height: 60px;
+    font-size: 20px;
   }
 
+.admin-tab tr {
+    border-bottom: 1px solid #64CCC5;
+  }
+  
 .image-cell {
     display: flex;
     justify-content: center;
@@ -16,33 +25,20 @@ th {
 }
 
 img {
-    width: 210px;
-    padding: 15px;
+    width: 220px;
+    padding: 18px;
 }
 
 .name-cell, .price-cell, .stock-cell {
     text-align: center;
+    font-size: 18px;
 }
 
-
-
-.admin-tab tr:nth-child(odd) td:nth-child(2),
-.admin-tab tr:nth-child(odd) td:nth-child(3),
-.admin-tab tr:nth-child(odd) td:nth-child(4) {
-  background-color: #ffffff; /* Culoare pentru celulele impare */
+.delete-cell {
+  width: 150px;
 }
 
-.admin-tab tr:nth-child(even) td:nth-child(2),
-.admin-tab tr:nth-child(even) td:nth-child(3),
-.admin-tab tr:nth-child(even) td:nth-child(4) {
-  background-color: lightgray; /* Culoare pentru celulele pare */
-}
-
-.admin-tab td:nth-child(1) {
-    border-right: 1px solid black; /* Adaugă linia verticală */
-}
-
-  .modal {
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -59,8 +55,8 @@ img {
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
+    width: 760px;
+    height: 600px;
   }
   
   .close {
@@ -73,12 +69,132 @@ img {
   
   .close:hover,
   .close:focus {
-    color: black;
+    color: #F24C3D;
     text-decoration: none;
     cursor: pointer;
   }
 
-    
+#product-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#image-input, #name-input, #description-input, #price-input, #stock-input {
+  margin-bottom: 35px;
+}
+
+#image-input {
+  height: 20px;
+}
+
+#name-input {
+  width: 60%;
+  height: 30px;
+}
+
+#description-input {
+  height: 80px;
+}
+
+#price-input {
+  width: 10%;
+  height: 20px;
+}
+
+#stock-input {
+  width: 10%;
+  height: 20px;
+}
+
+#add-form {
+  width: 30%;
+  margin-left: 250px;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  background-color: #64CCC5;
+  color: white;
+}
+
+#form-title {
+  display: flex;
+  justify-content: center;
+  font-size: 27px;
+  color: #176B87;
+}
+
+label {
+  font-size: 18px;
+}
+
+.elements-navbar {
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	padding-top: 20px;
+}
+
+#btn-cart {
+	text-align: center;
+	font-size: 20px;
+	margin-top: 20px;
+	text-decoration: none;
+	color: #176B87;
+}
+
+#btn-home {
+	width: 200px;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 20px;
+	text-decoration: none;
+	color: #176B87;
+  margin-left: 1500px;
+}
+
+
+#home-icon {
+  margin-right: 7px;
+  font-size: 23px;
+}
+
+#cart-icon {
+  margin-right: 7px;
+  font-size: 23px;
+}
+
+.admin-tab {
+  margin-top: 60px;
+  position: absolute;
+}
+
+#add-product-btn {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 900px;
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    background-color: #64CCC5;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-button {
+  margin-left: 60px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  color:#F24C3D;
+  cursor: pointer;
+}
+
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 
 

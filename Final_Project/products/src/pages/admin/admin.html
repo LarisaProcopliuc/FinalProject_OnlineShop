@@ -5,7 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Admin</title>
+
 		<link rel="stylesheet" href="style.css">
+
+		<script src="https://kit.fontawesome.com/6710ea271f.js" crossorigin="anonymous"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
 	</head>
 	<body>
 		<div id="product-modal" class="modal">
@@ -23,22 +31,19 @@
 				<input type="number" id="price-input" required>
 				<label for="stock-input">Stock:</label>
 				<input type="number" id="stock-input" required>
-				<button type="submit">Add</button>
+				<button type="submit" id="add-form">Add</button>
 			  </form>
 			</div>
 		  </div>
 
 		<div class="container">
 			<div class="navbar">
-				<div>
-					<a href="../../../index.html">Home</a>
-					<!-- <a href="../details/details.html">Details</a> -->
-					<a href="../cart/cart.html">Cart</a>
-					<a href="../admin/admin.html">Admin</a>
+				<div class="elements-navbar">
+					<a href="../../../index.html" id="btn-home"><i class="fa-solid fa-house" id="home-icon"></i>Home</a>
+					<a href="../cart/cart.html" id="btn-cart"><i class="fa-solid fa-cart-shopping" id="cart-icon"></i>Cart</a>
 				</div>
 			</div>
 			<div class="admin">
-				<p>Product management</p>
 
 				<button id="add-product-btn">Add new product</button>
 
