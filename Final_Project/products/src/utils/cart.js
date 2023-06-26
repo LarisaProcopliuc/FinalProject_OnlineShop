@@ -42,9 +42,13 @@ export function decrementProductQuantity(id, cartArray) {
 }
 
 export function removeProductFromCart(id, cartArray) {
-    const productIndex = cartArray.findIndex((item) => item.id === id);
-    if (productIndex !== -1) {
-        cartArray(productIndex, 1);
-    }
-}
+	if (!Array.isArray(cartArray)) {
+	  return;
+	}
+  
+	const productIndex = cartArray.findIndex((item) => item.id === id);
+	if (productIndex !== -1) {
+	  cartArray.splice(productIndex, 1);
+	}
+  }
 
